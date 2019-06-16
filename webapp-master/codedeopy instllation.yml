@@ -1,0 +1,24 @@
+
+codedeopy:
+  1. role for codedeoply
+  2.role of ec2 instance to s3
+
+ codedeopy agent and tomcat8 and javajdk installation:
+
+  sudo yum update
+    2  sudo yum install ruby
+    3  sudo yum install wget
+    4  sudo yum erase java-1.7.0-openjdk.x86_64
+    5  sudo yum install java-1.8.0-openjdk.x86_64
+    6  sudo yum install java-1.8.0-openjdk-devel
+    7  sudo yum install tomcat8
+    8  cd /home/ec2-user
+   11  wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+   12  chmod +x ./install
+   13  sudo ./install auto
+   14  
+   
+   sudo service codedeploy-agent status
+   sudo java -version
+   sudo service tomcat8 status
+   sudo service tomcat8 start
